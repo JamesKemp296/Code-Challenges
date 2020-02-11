@@ -13,7 +13,6 @@
 
 const twoSum = (nums, target) => {
   let myArr = []
-  let last = nums.length - 1
   for (i = 0; i < nums.length; i++) {
     for (i2 = i + 1; i2 < nums.length; i2++) {
       if (nums[i] + nums[i2] === target) myArr.push(i, i2)
