@@ -6,3 +6,16 @@
 // Examples
 // "the-stealth-warrior" gets converted to "theStealthWarrior"
 // "The_Stealth_Warrior" gets converted to "TheStealthWarrior"
+
+function toCamelCase(str) {
+  return str
+    .split(/[^A-Za-z]/)
+    .map((word, i) => {
+      if (i > 0) {
+        return word.charAt(0).toUpperCase() + word.slice(1)
+      } else {
+        return word
+      }
+    })
+    .join('')
+}
