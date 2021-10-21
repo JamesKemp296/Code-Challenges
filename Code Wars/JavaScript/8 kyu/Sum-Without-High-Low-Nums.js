@@ -4,7 +4,7 @@
 // even if there are more than one with the same value!)
 
 function sumArray(array) {
-  if (!array || array.length <= 1) return 0
+  if (!array) return 0
   array.sort((a, b) => a - b).pop()
   array.shift()
   return array.reduce((a, b) => a + b, 0)
